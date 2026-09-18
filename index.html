@@ -274,14 +274,14 @@
 </head>
 <body>
   <header class="header">
-    <div class="last-updated-top">最終更新 2026-09-18 23:03 ICT</div>
+    <div class="last-updated-top">最終更新 2026-09-18 23:10 ICT</div>
     <div>
       <div class="title">📚 ブックマーク</div>
       <div class="subtitle">Telegram で投げた URL の要約・活用案ストック</div>
     </div>
     <div class="meta-stats">
-      <div class="stat"><span class="num">343</span> 件</div>
-      <div class="stat"><span class="num">222</span> 活用可</div>
+      <div class="stat"><span class="num">344</span> 件</div>
+      <div class="stat"><span class="num">223</span> 活用可</div>
       <div class="stat"><span class="num">32</span> 保留</div>
       <div class="stat"><span class="num">89</span> 参考</div>
     </div>
@@ -289,9 +289,20 @@
 
   <div class="filter-bar" id="filter-bar">
     <strong>タグ絞り込み</strong>
-    <span class="tag-chip active" data-tag="__all__">すべて<span class="count">343</span></span>    <span class="tag-chip" data-tag="ai">ai<span class="count">158</span></span>    <span class="tag-chip" data-tag="ai-prompt">ai-prompt<span class="count">1</span></span>    <span class="tag-chip" data-tag="amazon">amazon<span class="count">68</span></span>    <span class="tag-chip" data-tag="automation">automation<span class="count">135</span></span>    <span class="tag-chip" data-tag="claude-prompt">claude-prompt<span class="count">1</span></span>    <span class="tag-chip" data-tag="design">design<span class="count">1</span></span>    <span class="tag-chip" data-tag="flight-deals">flight-deals<span class="count">1</span></span>    <span class="tag-chip" data-tag="health">health<span class="count">2</span></span>    <span class="tag-chip" data-tag="marketing">marketing<span class="count">167</span></span>    <span class="tag-chip" data-tag="productivity">productivity<span class="count">1</span></span>    <span class="tag-chip" data-tag="sns">sns<span class="count">172</span></span>    <span class="tag-chip" data-tag="tools">tools<span class="count">151</span></span>    <span class="tag-chip" data-tag="travel-hack">travel-hack<span class="count">1</span></span>  </div>
+    <span class="tag-chip active" data-tag="__all__">すべて<span class="count">344</span></span>    <span class="tag-chip" data-tag="ai">ai<span class="count">159</span></span>    <span class="tag-chip" data-tag="ai-prompt">ai-prompt<span class="count">1</span></span>    <span class="tag-chip" data-tag="amazon">amazon<span class="count">68</span></span>    <span class="tag-chip" data-tag="automation">automation<span class="count">136</span></span>    <span class="tag-chip" data-tag="claude-prompt">claude-prompt<span class="count">1</span></span>    <span class="tag-chip" data-tag="design">design<span class="count">1</span></span>    <span class="tag-chip" data-tag="flight-deals">flight-deals<span class="count">1</span></span>    <span class="tag-chip" data-tag="health">health<span class="count">2</span></span>    <span class="tag-chip" data-tag="marketing">marketing<span class="count">167</span></span>    <span class="tag-chip" data-tag="productivity">productivity<span class="count">1</span></span>    <span class="tag-chip" data-tag="sns">sns<span class="count">172</span></span>    <span class="tag-chip" data-tag="tools">tools<span class="count">152</span></span>    <span class="tag-chip" data-tag="travel-hack">travel-hack<span class="count">1</span></span>  </div>
 
-  <section class="grid" id="card-grid">    <article class="card j-reference ds-card" data-tags="ai,automation,tools">
+  <section class="grid" id="card-grid">    <article class="card j-active ds-card" data-tags="automation,ai,tools">
+      <div class="card-top">
+        <span class="id">d-350</span>
+        <span class="date">2026-09-19</span>
+      </div>
+
+      <div class="card-title">        <a href="https://x.com/masahirochaen/status/2100929058829955418?s=12" target="_blank" rel="noopener noreferrer" title="元 URL を開く">Claude Codeの文脈圧縮を要約なしで実現するJev(TypeSafeAI)の手法に関する引用ポスト<span class="ext">↗</span></a>      </div>      <div class="card-tags">        <span class="row-tag">automation</span>        <span class="row-tag">ai</span>        <span class="row-tag">tools</span>      </div>      <div class="card-summary">TypeSafeAIの「Jev」が、会話履歴を要約せずツール呼び出し単位でp(drop)スコアにより足切りする方式でClaude Codeのコンテキストを156,000→62,000トークン（使用率78%→31%）に圧縮。16件中6件のみ削除し10件は原文保持。OSSとして「fast-jev-compaction」をGitHub公開。</div>      <div class="card-judge j-active">活用可: VPS運用中のClaude Codeベース Bot 群のコンテキスト肥大・トークン消費対策として評価価値あり</div>      <div class="card-fulltext">
+        <div class="fulltext-label">📄 原文プレビュー</div>        <div class="fulltext-preview">この使い方めっちゃ良い。Claude Code、Codexに実装してほしい。 ＞ Claude Codeの文脈圧縮、要約なしで156,000→62,000トークンに一撃短縮。TypeSafeAIの「Jev」 履歴を要約せずスコアで足切りする発想が良い ・使用率78%→31%に圧縮 ・16件中10件は原文のままKeep、6件だけ削除 ・ツール呼び出し1件ずつp(drop)スコアで判定 ・OSSは「fast-jev-compaction」で…</div>        <a class="fulltext-link" href="digistock-backups/d-350.md" target="_blank" rel="noopener noreferrer">原文を全部読む →</a>
+      </div>      <details class="card-proposal">
+        <summary>活用提案</summary>
+        <div class="proposal-body">「fast-jev-compaction」をVPS Bot（Bot等）の長時間セッションでのコンテキスト圧縮に試験導入できないか調査、要約ロスなくトークン消費を抑えられれば運用コスト・応答速度の改善につながる</div>
+      </details>    </article>    <article class="card j-reference ds-card" data-tags="ai,automation,tools">
       <div class="card-top">
         <span class="id">d-349</span>
         <span class="date">2026-09-19</span>
