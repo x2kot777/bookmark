@@ -274,24 +274,35 @@
 </head>
 <body>
   <header class="header">
-    <div class="last-updated-top">最終更新 2026-09-22 23:34 ICT</div>
+    <div class="last-updated-top">最終更新 2026-09-23 20:11 ICT</div>
     <div>
       <div class="title">📚 ブックマーク</div>
       <div class="subtitle">Telegram で投げた URL の要約・活用案ストック</div>
     </div>
     <div class="meta-stats">
-      <div class="stat"><span class="num">357</span> 件</div>
+      <div class="stat"><span class="num">358</span> 件</div>
       <div class="stat"><span class="num">226</span> 活用可</div>
-      <div class="stat"><span class="num">37</span> 保留</div>
+      <div class="stat"><span class="num">38</span> 保留</div>
       <div class="stat"><span class="num">94</span> 参考</div>
     </div>
   </header>
 
   <div class="filter-bar" id="filter-bar">
     <strong>タグ絞り込み</strong>
-    <span class="tag-chip active" data-tag="__all__">すべて<span class="count">357</span></span>    <span class="tag-chip" data-tag="ai">ai<span class="count">170</span></span>    <span class="tag-chip" data-tag="ai-prompt">ai-prompt<span class="count">1</span></span>    <span class="tag-chip" data-tag="amazon">amazon<span class="count">71</span></span>    <span class="tag-chip" data-tag="automation">automation<span class="count">147</span></span>    <span class="tag-chip" data-tag="claude-prompt">claude-prompt<span class="count">1</span></span>    <span class="tag-chip" data-tag="design">design<span class="count">1</span></span>    <span class="tag-chip" data-tag="flight-deals">flight-deals<span class="count">1</span></span>    <span class="tag-chip" data-tag="health">health<span class="count">2</span></span>    <span class="tag-chip" data-tag="marketing">marketing<span class="count">172</span></span>    <span class="tag-chip" data-tag="productivity">productivity<span class="count">1</span></span>    <span class="tag-chip" data-tag="sns">sns<span class="count">176</span></span>    <span class="tag-chip" data-tag="tools">tools<span class="count">157</span></span>    <span class="tag-chip" data-tag="travel-hack">travel-hack<span class="count">1</span></span>  </div>
+    <span class="tag-chip active" data-tag="__all__">すべて<span class="count">358</span></span>    <span class="tag-chip" data-tag="ai">ai<span class="count">171</span></span>    <span class="tag-chip" data-tag="ai-prompt">ai-prompt<span class="count">1</span></span>    <span class="tag-chip" data-tag="amazon">amazon<span class="count">71</span></span>    <span class="tag-chip" data-tag="automation">automation<span class="count">148</span></span>    <span class="tag-chip" data-tag="claude-prompt">claude-prompt<span class="count">1</span></span>    <span class="tag-chip" data-tag="design">design<span class="count">1</span></span>    <span class="tag-chip" data-tag="flight-deals">flight-deals<span class="count">1</span></span>    <span class="tag-chip" data-tag="health">health<span class="count">2</span></span>    <span class="tag-chip" data-tag="marketing">marketing<span class="count">172</span></span>    <span class="tag-chip" data-tag="productivity">productivity<span class="count">1</span></span>    <span class="tag-chip" data-tag="sns">sns<span class="count">176</span></span>    <span class="tag-chip" data-tag="tools">tools<span class="count">158</span></span>    <span class="tag-chip" data-tag="travel-hack">travel-hack<span class="count">1</span></span>  </div>
 
-  <section class="grid" id="card-grid">    <article class="card j-active ds-card" data-tags="sns,marketing,amazon">
+  <section class="grid" id="card-grid">    <article class="card j-pending ds-card" data-tags="automation,ai,tools">
+      <div class="card-top">
+        <span class="id">d-364</span>
+        <span class="date">2026-09-23</span>
+      </div>
+
+      <div class="card-title">        <a href="https://x.com/tetsu_tetsu333/status/2102035483308023949?s=12" target="_blank" rel="noopener noreferrer" title="元 URL を開く">JevでSEO内部リンク解析ツールを自作、100記事解析78円という事例<span class="ext">↗</span></a>      </div>      <div class="card-tags">        <span class="row-tag">automation</span>        <span class="row-tag">ai</span>        <span class="row-tag">tools</span>      </div>      <div class="card-summary">CocoonブログのURLを入れるだけで全記事を解析し、内部リンクの追加提案・設置文言・アンカーテキストまで自動生成するツール。robots.txt/サイトマップ収集→TF-IDFで候補絞り込み→判断が必要な部分だけJevに任せる設計で、100記事の解析コストは78円。</div>      <div class="card-judge j-pending">保留: Kohは現状ブログ/SEOサイトを運用していないため直接適用先がない</div>      <div class="card-fulltext">
+        <div class="fulltext-label">📄 原文プレビュー</div>        <div class="fulltext-preview">すごい。 JevでSEO内部リンク解析ツールを作ったのですが、想像以上に精度が高かったです。 100記事の内部リンク解析で、かかった費用は78円。 サイトURLを入れるだけで ・全記事の本文と既存リンクを取得 ・「この記事からこの記事へリンクすべき」を提案 ・リンクを入れる具体的な文章を特定 ・実際に使うアンカーテキストも提示 ・現在と改善後の内部リンク構造を可視化 ・結果をExcelやCSVでダウンロード まで自動でやってくれます。…</div>        <a class="fulltext-link" href="digistock-backups/d-364.md" target="_blank" rel="noopener noreferrer">原文を全部読む →</a>
+      </div>      <details class="card-proposal">
+        <summary>活用提案</summary>
+        <div class="proposal-body">『通常コードで候補を絞り、意味判断だけLLMに任せる』設計思想はBot自動化の低コスト化パターンとして流用できる。ブログ資産を持つなら試す価値あり、今は設計思想のメモ化にとどめる。</div>
+      </details>    </article>    <article class="card j-active ds-card" data-tags="sns,marketing,amazon">
       <div class="card-top">
         <span class="id">d-363</span>
         <span class="date">2026-09-23</span>
