@@ -274,24 +274,35 @@
 </head>
 <body>
   <header class="header">
-    <div class="last-updated-top">最終更新 2026-09-28 18:16 ICT</div>
+    <div class="last-updated-top">最終更新 2026-09-29 23:05 ICT</div>
     <div>
       <div class="title">📚 ブックマーク</div>
       <div class="subtitle">Telegram で投げた URL の要約・活用案ストック</div>
     </div>
     <div class="meta-stats">
-      <div class="stat"><span class="num">450</span> 件</div>
+      <div class="stat"><span class="num">451</span> 件</div>
       <div class="stat"><span class="num">241</span> 活用可</div>
       <div class="stat"><span class="num">48</span> 保留</div>
-      <div class="stat"><span class="num">161</span> 参考</div>
+      <div class="stat"><span class="num">162</span> 参考</div>
     </div>
   </header>
 
   <div class="filter-bar" id="filter-bar">
     <strong>タグ絞り込み</strong>
-    <span class="tag-chip active" data-tag="__all__">すべて<span class="count">450</span></span>    <span class="tag-chip" data-tag="ai">ai<span class="count">253</span></span>    <span class="tag-chip" data-tag="ai-prompt">ai-prompt<span class="count">1</span></span>    <span class="tag-chip" data-tag="amazon">amazon<span class="count">80</span></span>    <span class="tag-chip" data-tag="automation">automation<span class="count">208</span></span>    <span class="tag-chip" data-tag="claude-prompt">claude-prompt<span class="count">1</span></span>    <span class="tag-chip" data-tag="design">design<span class="count">1</span></span>    <span class="tag-chip" data-tag="flight-deals">flight-deals<span class="count">1</span></span>    <span class="tag-chip" data-tag="health">health<span class="count">2</span></span>    <span class="tag-chip" data-tag="marketing">marketing<span class="count">184</span></span>    <span class="tag-chip" data-tag="productivity">productivity<span class="count">1</span></span>    <span class="tag-chip" data-tag="sns">sns<span class="count">218</span></span>    <span class="tag-chip" data-tag="tools">tools<span class="count">209</span></span>    <span class="tag-chip" data-tag="travel-hack">travel-hack<span class="count">1</span></span>  </div>
+    <span class="tag-chip active" data-tag="__all__">すべて<span class="count">451</span></span>    <span class="tag-chip" data-tag="ai">ai<span class="count">254</span></span>    <span class="tag-chip" data-tag="ai-prompt">ai-prompt<span class="count">1</span></span>    <span class="tag-chip" data-tag="amazon">amazon<span class="count">80</span></span>    <span class="tag-chip" data-tag="automation">automation<span class="count">209</span></span>    <span class="tag-chip" data-tag="claude-prompt">claude-prompt<span class="count">1</span></span>    <span class="tag-chip" data-tag="design">design<span class="count">1</span></span>    <span class="tag-chip" data-tag="flight-deals">flight-deals<span class="count">1</span></span>    <span class="tag-chip" data-tag="health">health<span class="count">2</span></span>    <span class="tag-chip" data-tag="marketing">marketing<span class="count">184</span></span>    <span class="tag-chip" data-tag="productivity">productivity<span class="count">1</span></span>    <span class="tag-chip" data-tag="sns">sns<span class="count">218</span></span>    <span class="tag-chip" data-tag="tools">tools<span class="count">210</span></span>    <span class="tag-chip" data-tag="travel-hack">travel-hack<span class="count">1</span></span>  </div>
 
-  <section class="grid" id="card-grid">    <article class="card j-reference ds-card" data-tags="ai,tools,automation">
+  <section class="grid" id="card-grid">    <article class="card j-reference ds-card" data-tags="automation,ai,tools">
+      <div class="card-top">
+        <span class="id">d-457</span>
+        <span class="date">2026-09-30</span>
+      </div>
+
+      <div class="card-title">        <a href="https://x.com/masahirochaen/status/2104862755505447164?s=12" target="_blank" rel="noopener noreferrer" title="元 URL を開く">CI待ち時間を27分→3.9分に短縮した5つの施策(Claude Codeで原因診断)<span class="ext">↗</span></a>      </div>      <div class="card-tags">        <span class="row-tag">automation</span>        <span class="row-tag">ai</span>        <span class="row-tag">tools</span>      </div>      <div class="card-summary">自社サービスのPRごとのCI待ち時間が27分あった問題を、Claude Codeに原因調査させたところ「テストの書き方」が犯人と判明。テスト毎のアプリ再構築をやめる/API並列4台実行/重い部品読み込みの一本化/画面検査を3分担/DB書き込み待ちの削減、の5施策でテスト数を減らさず約7倍高速化(課金時間も減少)。</div>      <div class="card-judge j-reference">参考のみ: Koh の現行リポジトリは個人自動化・ダッシュボード生成中心で、PRごとに重いテストスイートを回すCIパイプラインは持っていないため直接適用箇所が薄い。</div>      <div class="card-fulltext">
+        <div class="fulltext-label">📄 原文プレビュー</div>        <div class="fulltext-preview">今、自社サービスをClaude CodeとCodexを使って爆速で作り直していますが、その中で一番のボトルネックになっていたのは、AIではなく「CIの待ち時間」でした。PRを出すたびに27分待たされてました。 Claude Codeに原因を調べてもらったところ、犯人は「テストの書き方」でした。直した結果、待ち時間は27分から3.9分になり、約7倍速くなりました。テストは1件も減らしておらず、課金時間もむしろ減っています。 ■やったこと…</div>        <a class="fulltext-link" href="digistock-backups/d-457.md" target="_blank" rel="noopener noreferrer">原文を全部読む →</a>
+      </div>      <details class="card-proposal">
+        <summary>活用提案</summary>
+        <div class="proposal-body">技術自体より『遅い処理の原因をClaude Codeに診断させる』アプローチが汎用的。今後 dashboard-gen や VPS Bot 群のデプロイ/再生成処理が重くなったら、同じ要領でClaude Codeにボトルネック診断を依頼する運用として覚えておく程度。</div>
+      </details>    </article>    <article class="card j-reference ds-card" data-tags="ai,tools,automation">
       <div class="card-top">
         <span class="id">d-456</span>
         <span class="date">2026-09-28</span>
