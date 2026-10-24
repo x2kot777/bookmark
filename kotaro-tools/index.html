@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; form-action 'none'">
+  <meta name="robots" content="noindex, nofollow">
+  <title>琥太郎の商品づくり お金の2つの道具</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">本文へ</a>
+  <header class="site-header">
+    <a class="brand" href="#">琥太郎の商品づくり<span>お金の2つの道具</span></a>
+    <p class="local-badge">説明用の試算ツール｜例の数字は仮定です</p>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <noscript><p class="notice warn">この道具は JavaScript を使います。ブラウザの設定で有効にしてください。</p></noscript>
+    <p id="load-warning" class="notice warn" hidden>読み込みに失敗しました。通信を確認し、ページを再読込してください。</p>
+
+    <!-- トップ -->
+    <section id="view-home" class="view" data-view="home" aria-labelledby="home-title">
+      <h1 id="home-title" class="page-title">商品づくりのお金を試す</h1>
+      <p class="lead">②必要な資金と③売れた後のお金を、例の数字で試せます。①ジャンル発見はLINEのトーク内で進めます。</p>
+      <ol class="tool-list">
+        <li>
+          <a class="tool-card" href="#funds">
+            <span class="tool-icon" aria-hidden="true">②</span>
+            <span class="tool-body">
+              <strong>商品づくり資金シミュレーター</strong>
+              <span class="tool-purpose">商品例・予算・つくる数を選んで、必要なお金を試す</span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a class="tool-card" href="#profit">
+            <span class="tool-icon" aria-hidden="true">③</span>
+            <span class="tool-body">
+              <strong>利益まる見えシミュレーター</strong>
+              <span class="tool-purpose">商品例を選び、売る値段と売れた数を動かして利益を見る</span>
+            </span>
+          </a>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ② 資金 -->
+    <section id="view-funds" class="view" data-view="funds" aria-labelledby="funds-title" hidden>
+      <a class="back" href="#">← お金の2つの道具へ戻る</a>
+      <h1 id="funds-title" class="page-title">② 商品づくり資金シミュレーター</h1>
+      <p class="lead">商品を売り始めるまでに、いくら用意しておくかを出します。</p>
+      <div id="funds-root"></div>
+    </section>
+
+    <!-- ③ 利益 -->
+    <section id="view-profit" class="view" data-view="profit" aria-labelledby="profit-title" hidden>
+      <a class="back" href="#">← お金の2つの道具へ戻る</a>
+      <h1 id="profit-title" class="page-title">③ 利益まる見えシミュレーター</h1>
+      <p class="lead">この商品、売れたらいくら残る？　1 個あたりと、全体の数字を分けて見ます。</p>
+      <div id="profit-root"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><strong>入力の送信・保存はしません。</strong>試した数字は画面を閉じると消えます。</p>
+    <p>例の数字はすべて説明用の仮定です。相場・実績ではありません。税金・あなた自身の報酬は計算に入っていません。</p>
+    <button type="button" class="btn btn-ghost" id="clear-storage">入力を消して例に戻す</button>
+    <p id="clear-status" class="small" role="status"></p>
+  </footer>
+  <script src="boot-check.js"></script>
+</body>
+</html>
